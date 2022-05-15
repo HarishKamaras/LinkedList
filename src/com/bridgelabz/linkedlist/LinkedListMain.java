@@ -26,6 +26,16 @@ public class LinkedListMain {
         System.out.println();
         System.out.println("After insert: ");
         linkedList2.display();
-
+        LinkedList<Integer> linkedList3 = new LinkedList<>();
+        linkedList3.add(70);
+        linkedList3.add(30);
+        linkedList3.add(56);
+        System.out.println();
+        System.out.println("Before Pop: ");
+        linkedList3.display();
+        linkedList3.pop();
+        System.out.println();
+        System.out.println("After Pop: ");
+        linkedList3.display();
     }
 }

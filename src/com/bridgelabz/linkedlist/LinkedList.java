@@ -29,7 +29,11 @@ public class LinkedList <E> {
         head.next = newNode;
         newNode.next = tail;
     }
-
+    public E pop() {
+        E data = head.data;
+        head = head.next;
+        return data;
+    }
     public void display() {
         Node<E> temp = head;
         while (temp != null) {
