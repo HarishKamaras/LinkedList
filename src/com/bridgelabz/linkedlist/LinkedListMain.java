@@ -37,5 +37,16 @@ public class LinkedListMain {
         System.out.println();
         System.out.println("After Pop: ");
         linkedList3.display();
+        LinkedList<Integer> linkedList4 = new LinkedList<>();
+        linkedList4.add(70);
+        linkedList4.add(30);
+        linkedList4.add(56);
+        System.out.println();
+        System.out.println("Before PopLast: ");
+        linkedList4.display();
+        linkedList4.popLast();
+        System.out.println();
+        System.out.println("After PopLast: ");
+        linkedList4.display();
     }
 }

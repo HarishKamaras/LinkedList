@@ -34,6 +34,19 @@ public class LinkedList <E> {
         head = head.next;
         return data;
     }
+    public void popLast() {
+        Node<E> poppedNode = new Node<>(tail.data);
+        Node<E> temp = head;
+        Node<E> prev = null;
+        while (temp.data != null) {
+            if (temp.data == tail.data) {
+                prev.next = null;
+                break;
+            }
+            prev = temp;
+            temp = temp.next;
+        }
+    }
     public void display() {
         Node<E> temp = head;
         while (temp != null) {
