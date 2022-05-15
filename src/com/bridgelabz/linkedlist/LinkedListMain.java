@@ -55,8 +55,9 @@ public class LinkedListMain {
         System.out.println();
         if (linkedList3.search(30) == true) {
             System.out.println("the given data is present ");
-        } else System.out.println("the given data not present");
-
+        } else {
+            System.out.println("the given data not present");
+        }
         LinkedList<Integer> linkedList6 = new LinkedList<>();
         linkedList6.add(70);
         linkedList6.add(30);
@@ -65,5 +66,11 @@ public class LinkedListMain {
         linkedList6.insertAfter(30,40);
         System.out.println("Inserting 40 after 30: ");
         linkedList6.display();
+        System.out.println();
+        linkedList6.DeleteElement(40);
+        System.out.println("After Delete 40: ");
+        linkedList6.display();
+        System.out.println();
+        linkedList6.linkedListSize();
     }
 }
