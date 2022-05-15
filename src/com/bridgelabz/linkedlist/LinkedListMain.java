@@ -16,5 +16,16 @@ public class LinkedListMain {
         System.out.println();
         System.out.println("After Appending the data : ");
         linkedList1.display();
+        LinkedList<Integer> linkedList2 = new LinkedList<>();
+        linkedList2.add(56);
+        linkedList2.add(70);
+        System.out.println();
+        System.out.println("Before insert: ");
+        linkedList2.display();
+        linkedList2.insertBetween(30);
+        System.out.println();
+        System.out.println("After insert: ");
+        linkedList2.display();
+
     }
 }

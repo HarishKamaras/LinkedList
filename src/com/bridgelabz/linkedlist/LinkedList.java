@@ -24,6 +24,12 @@ public class LinkedList <E> {
             tail = newNode;
         }
     }
+    public void insertBetween(E data) {
+        Node<E> newNode = new Node<>(data);
+        head.next = newNode;
+        newNode.next = tail;
+    }
+
     public void display() {
         Node<E> temp = head;
         while (temp != null) {
