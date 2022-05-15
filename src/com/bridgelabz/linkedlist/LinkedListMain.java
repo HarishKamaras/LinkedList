@@ -48,5 +48,15 @@ public class LinkedListMain {
         System.out.println();
         System.out.println("After PopLast: ");
         linkedList4.display();
+        LinkedList <Integer> linkedList5 = new LinkedList<>();
+        linkedList5.add(70);
+        linkedList5.add(30);
+        linkedList5.add(56);
+        System.out.println();
+        if(linkedList3.search(30)==true)
+        {
+            System.out.println("the given data is present ");
+        }
+        else System.out.println("the given data not present");
     }
 }
