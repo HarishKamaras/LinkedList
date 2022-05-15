@@ -7,6 +7,7 @@ public class LinkedListMain {
         linkedList.add(70);
         linkedList.add(30);
         linkedList.add(56);
+        System.out.println("After Adding the data : ");
         linkedList.display();
     }
 }
